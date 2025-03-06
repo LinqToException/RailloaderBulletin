@@ -1,0 +1,14 @@
+- # 2025-03-06 Mods that have broken with RR 2024.6+ and have no update, i.e. get a generic message
+  requires:
+    - id: railroader
+      notBefore: 2024.6
+  
+  message: "This mod is not compatible with Railroader 2024.6 and later."
+  forceFail: true
+
+  mods:
+    # Sylva Wyes
+    - id: "Elkenary__.ESW"
+      notAfter: 1.0.0.0
+    - id: "PrinceOfPluto.SylvaJctWye"
+      notAfter: 1.0.0.0

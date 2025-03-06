@@ -1,0 +1,38 @@
+name: Merge Bulletins
+
+on:
+  pull_request:
+    types: [ opened, reopened, synchronize ]
+    branches: [ master ]
+  push:
+    branches: [ master ]
+    paths:
+      - "bulletins/**/*.yml"
+  workflow_dispatch:
+
+jobs:
+  Merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Merge YAML into JSON
+        run: |
+          mkdir -p output
+          python ./scripts/bundle.py
+      - name: Upload Artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: bulletin
+          path: bulletins.json

@@ -1,0 +1,10 @@
+- # 2025-03-06 AMM for 2024.6+
+  mods:
+  - id: AlinaNova21.AlinasMapMod
+    notAfter: 1.4.25062.1719
+  requires:
+  - id: railroader
+    notBefore: 2024.6
+  message: "This mod is outdated and requires an update to run with this version of Railroader."
+  url: "https://railroader.alinanova.dev"
+  forceFail: true

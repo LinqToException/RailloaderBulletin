@@ -1,0 +1,28 @@
+- # 2025-03-06 Mods that have broken for 2024.6+ and require an update
+  requires:
+  - id: railroader
+    notBefore: 2024.6
+  
+  mods:
+  - id: Zamu.StrangeCustoms
+    notAfter: 1.10
+  - id: Zamu.FallFromGrace
+    notAfter: 1.1.24366
+  - id: Zamu.ForYourConvenience
+    notAfter: 1.2.24366
+  - id: Zamu.C1CD
+    notAfter: 1.1.24366
+  - id: Zamu.ConfusingSupplements
+    notAfter: 1.2.24366
+  - id: Zamu.ADRFDR
+    notAfter: 1.4.24366
+  - id: Zamu.NarrowGauge
+    notAfter: 1.4.24366
+  - id: Zamu.SomeKindOfMadness
+    notAfter: 1.4.24366
+  - id: Zamu.Interchange2Interchange
+    notAfter: 1.3.24278
+
+  message: "This mod is outdated and requires an update to run with this version of Railroader."
+  url: "https://railroader.stelltis.ch/mods"
+  forceFail: true

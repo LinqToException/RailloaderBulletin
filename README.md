@@ -49,9 +49,9 @@ Whenever the master branch is merged, a build is triggered which will compile a 
 
 ## Contribution Workflow
 
-In order to create an entry, make a PR in this repository with the change(s) that you want to do. Usually, the entry should be in a file that clearly identifies
-either the mod that acts as trigger for the break (e.g. Strange Customs updates), or the mod that is the one that will be broken (e.g. some map mod). When in doubt,
-you can open an issue to explain your request in detail, and I'll see what can be done.
+In order to create an entry, make a PR in this repository with the change(s) that you want to do. Usually, the entry should be in a file that clearly identifies 
+either the mod author, the mod that acts as trigger for the break (e.g. Strange Customs updates), or the mod that is the one that will be broken (e.g. some map mod).
+When in doubt, you can open an issue to explain your request in detail, and I'll see what can be done.
 
 Otherwise, there are some ground rules:
 
